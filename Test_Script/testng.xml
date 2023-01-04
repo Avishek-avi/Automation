@@ -1,25 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test">
+  <test name="Test">
+  <parameter name="browser" value="firefox" />
     <classes>
-    <class name="com.new_Xuriti_project.TC_01_A_SignUP"/>
-    <class name="com.new_Xuriti_project.TC_02_B_Login"/>
-    <class name="com.new_Xuriti_project.TC_03_C_Company_add"/>
-    <class name="com.new_Xuriti_project.TC_04_D_entity_approve"/>
-    <class name="com.new_Xuriti_project.TC_05_E_Credit_plan_add"/>
-      <class name="com.new_Xuriti_project.TC_06_F_credit_plan_map_buyer"/>
-      <class name="com.new_Xuriti_project.TC_07_G_Nbfc_add"/>
-      <class name="com.new_Xuriti_project.TC_08_H_Nbfc_mapping"/>
-      <class name="com.new_Xuriti_project.TC_09_I_credit_limit_set"/>
-      <class name="com.new_Xuriti_project.TC_10_J_credit_limit_approve"/>
-      <class name="com.new_Xuriti_project.TC_11_K_Buyer_invoice_upload"/>
-      <class name="com.new_Xuriti_project.TC_12_L_Buyer_invoice_confirm"/>
-      <class name="com.new_Xuriti_project.TC_13_M_part_payment"/>
-      <class name="com.new_Xuriti_project.TC_14_N_Full_payment"/>
-      <class name="com.new_Xuriti_project.TC_15_O_offline_part_payment"/>
-      <class name="com.new_Xuriti_project.TC_16_P_Extra_full_offline_payment"/>
-      <class name="com.new_Xuriti_project.TC_17_Q_Reports_Transactional_statement"/>
+    <class name="app.xuriti.testCases.TC_004_CompanyApproval"/>
+    
+    
             
     </classes>
   </test> <!-- Test -->

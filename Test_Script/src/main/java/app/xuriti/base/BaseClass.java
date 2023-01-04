@@ -3,8 +3,10 @@ package app.xuriti.base;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 
 import app.xuriti.utilities.ReadConfig;
 
@@ -23,19 +25,36 @@ public class BaseClass {
 	public String email3 = readconfig.getCreditManagerEmail();
 	
 	public static WebDriver driver;
+	
 	public static Logger logger;
 	
+	@Parameters("browser")
 	@BeforeClass
-	public void setup()throws InterruptedException
+	public void setup(String br)throws InterruptedException
 	{
-		System.setProperty("webdriver.chrome.driver","./Driver\\chromedriver.exe");
-		driver=new ChromeDriver();
-		driver.manage().window().maximize();
-        Thread.sleep(4000);
-		
 		logger =Logger.getLogger("Xuriti_Webapp");
 		PropertyConfigurator.configure("Log4J.properties");
+		
+		
+		if(br.equals("chrome"))
+		{
+			System.setProperty("webdriver.chrome.driver","./Driver\\chromedriver.exe");
+			driver=new ChromeDriver();
+			driver.manage().window().maximize();
+        	Thread.sleep(3000);
+		}
+		else if(br.equals("firefox"))
+		{
+			System.setProperty("webdriver.gecko.driver","./Driver\\geckodriver.exe");
+			driver=new FirefoxDriver();
+			driver.manage().window().maximize();
+	        Thread.sleep(3000);
+		}
+		
+		//driver.get(baseURL);
 	}
+	
+
 	
 	@AfterClass
 	public void tearDown() throws InterruptedException

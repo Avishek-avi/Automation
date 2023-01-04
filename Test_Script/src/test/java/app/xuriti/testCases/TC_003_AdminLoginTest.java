@@ -4,18 +4,18 @@ import org.junit.Assert;
 import org.testng.annotations.Test;
 
 import app.xuriti.base.BaseClass;
-import app.xuriti.pageObjects.AdminLoginPage;
+import app.xuriti.pageObjects.Admin_LoginPage;
 
 public class TC_003_AdminLoginTest extends BaseClass {
 	
 	@Test(priority = 3)
-	public void AdminLoginTest()
+	public void adminLoginTest() throws InterruptedException
 	{
 		driver.get(baseURL2);
 		
 		logger.info("Admin page's URL is opened");
 		
-		AdminLoginPage lp= new AdminLoginPage(driver);
+		Admin_LoginPage lp= new Admin_LoginPage(driver);
 		lp.setEmail(email2);
 		logger.info("Entered admin's email id");
 		
@@ -23,6 +23,7 @@ public class TC_003_AdminLoginTest extends BaseClass {
 		logger.info("Entered admin's password");
 		
 		lp.clickLoginButton();
+		Thread.sleep(3000);
 		
 		if(driver.getTitle().equals("Admin"))
 		{

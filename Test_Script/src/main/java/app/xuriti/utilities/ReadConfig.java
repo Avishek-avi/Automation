@@ -43,6 +43,11 @@ public class ReadConfig {
 		return chromepath;
 	}
 	
+	public String getFirefoxpath() {
+		String firefoxpath= pro.getProperty("firefoxpath");
+		return firefoxpath;
+	}
+	
 	public String getGstNo() {
 		String gstno= pro.getProperty("gstno");
 		return gstno;

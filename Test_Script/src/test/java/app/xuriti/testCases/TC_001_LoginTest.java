@@ -9,10 +9,10 @@ import app.xuriti.pageObjects.LoginPage;
 public class TC_001_LoginTest extends BaseClass 
 {
 	
-	
 	@Test(priority = 0)
 	public void loginTest() throws InterruptedException
 	{
+		
 		driver.get(baseURL);
 		
 		logger.info("URL is opened");

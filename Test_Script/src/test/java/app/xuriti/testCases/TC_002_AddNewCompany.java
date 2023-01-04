@@ -7,7 +7,7 @@ import app.xuriti.base.BaseClass;
 import app.xuriti.pageObjects.CompaniesPage;
 import app.xuriti.pageObjects.RegisterEntityPage;
 
-public class TC_002_AddNewComapny extends BaseClass {
+public class TC_002_AddNewCompany extends BaseClass {
 	
 	@Test(priority = 1)
 	public void loginTest() throws InterruptedException {

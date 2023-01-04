@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="app.xuriti.testCases.TC_002_AddNewComapny">
+      <class name="app.xuriti.testCases.TC_004_CompanyApproval">
         <methods>
-          <include name="addNewCompanyTest"/>
           <include name="tearDown"/>
+          <include name="adminLoginTest"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- app.xuriti.testCases.TC_002_AddNewComapny -->
+      </class> <!-- app.xuriti.testCases.TC_004_CompanyApproval -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
