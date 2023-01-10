@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.testng.annotations.Test;
 
 import app.xuriti.base.BaseClass;
-import app.xuriti.pageObjects.Admin_LoginPage;
+import app.xuriti.pageObjects.AdminLoginPage;
 
 public class TC_003_AdminLoginTest extends BaseClass {
 	
@@ -15,7 +15,7 @@ public class TC_003_AdminLoginTest extends BaseClass {
 		
 		logger.info("Admin page's URL is opened");
 		
-		Admin_LoginPage lp= new Admin_LoginPage(driver);
+		AdminLoginPage lp= new AdminLoginPage(driver);
 		lp.setEmail(email2);
 		logger.info("Entered admin's email id");
 		

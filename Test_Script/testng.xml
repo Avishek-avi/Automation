@@ -2,8 +2,11 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test name="Test">
-  <parameter name="browser" value="firefox" />
+  <parameter name="browser" value="chrome" />
     <classes>
+     <!--<class name="app.xuriti.testCases.TC_001_LoginTest"/>
+      <class name="app.xuriti.testCases.TC_002_AddNewCompany"/>
+       <class name="app.xuriti.testCases.TC_003_AdminLoginTest"/>-->
     <class name="app.xuriti.testCases.TC_004_CompanyApproval"/>
     
     

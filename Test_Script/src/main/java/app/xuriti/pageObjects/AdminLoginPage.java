@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Admin_LoginPage 
+public class AdminLoginPage 
 {
 	
 WebDriver ldriver;
@@ -19,7 +19,7 @@ WebDriver ldriver;
     @FindBy(xpath= "//button[@type='submit']")
     public WebElement loginButton;
 	
-	public Admin_LoginPage(WebDriver rdriver)
+	public AdminLoginPage(WebDriver rdriver)
 	{
 		ldriver=rdriver;
 		PageFactory.initElements(rdriver,this);

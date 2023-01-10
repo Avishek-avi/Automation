@@ -5,7 +5,9 @@
     <classes>
       <class name="app.xuriti.testCases.TC_004_CompanyApproval">
         <methods>
+          <include name="manageComapniesSection"/>
           <include name="tearDown"/>
+          <include name="companyApproval"/>
           <include name="adminLoginTest"/>
           <include name="setup"/>
         </methods>

@@ -55,17 +55,43 @@ public class ReadConfig {
 	
 	public String getAdminPanelURL()
 	{
-		String url2= pro.getProperty("baseURL2");
+		String url2 = pro.getProperty("baseURL2");
 		return url2;
 	}
 	
 	public String getAdminEmail() {
-		String email2= pro.getProperty("email2");
+		String email2 = pro.getProperty("email2");
 		return email2;
 	}
 	
 	public String getCreditManagerEmail() {
-		String email3= pro.getProperty("email3");
+		String email3 = pro.getProperty("email3");
 		return email3;
 	}
+	
+	public String getCompanyName() {
+		String companyname = pro.getProperty("companyname");
+		return companyname;
+	}
+	
+	public String getPincode() {
+		String pincode = pro.getProperty("pincode");
+		return pincode;
+	}
+	
+	public String getAnnualTurnover() {
+		String annualturnover = pro.getProperty("annualturnover");
+		return annualturnover;
+	}
+	
+	public String getCreditLimit() {
+		String creditlimit = pro.getProperty("creditlimit");
+		return creditlimit;
+	}
+	
+	public String setComment() {
+		String comment = pro.getProperty("comment");
+		return comment;
+	}
+	
 }

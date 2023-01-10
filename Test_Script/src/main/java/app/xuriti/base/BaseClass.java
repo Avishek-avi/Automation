@@ -23,6 +23,11 @@ public class BaseClass {
 	public String baseURL2 = readconfig.getAdminPanelURL();
 	public String email2 = readconfig.getAdminEmail();
 	public String email3 = readconfig.getCreditManagerEmail();
+	public String companyname = readconfig.getCompanyName();
+	public String pincode = readconfig.getPincode();
+	public String annualturnover = readconfig.getAnnualTurnover();
+	public String creditlimit = readconfig.getCreditLimit();
+	public String comment = readconfig.setComment();
 	
 	public static WebDriver driver;
 	
@@ -51,7 +56,7 @@ public class BaseClass {
 	        Thread.sleep(3000);
 		}
 		
-		//driver.get(baseURL);
+		
 	}
 	
 
