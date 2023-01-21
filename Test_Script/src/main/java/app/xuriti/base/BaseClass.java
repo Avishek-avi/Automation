@@ -24,6 +24,7 @@ public class BaseClass {
 	public String email2 = readconfig.getAdminEmail();
 	public String email3 = readconfig.getCreditManagerEmail();
 	public String companyname = readconfig.getCompanyName();
+	public String sellername = readconfig.getSellerName();
 	public String pincode = readconfig.getPincode();
 	public String annualturnover = readconfig.getAnnualTurnover();
 	public String creditlimit = readconfig.getCreditLimit();

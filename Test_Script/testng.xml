@@ -6,10 +6,10 @@
     <classes>
      <!--<class name="app.xuriti.testCases.TC_001_LoginTest"/>
       <class name="app.xuriti.testCases.TC_002_AddNewCompany"/>
-       <class name="app.xuriti.testCases.TC_003_AdminLoginTest"/>-->
-    <class name="app.xuriti.testCases.TC_004_CompanyApproval"/>
-    
-    
+       
+    <class name="app.xuriti.testCases.TC_004_CompanyApproval"/>-->
+    <class name="app.xuriti.testCases.TC_005_CreditPlanMapping"/>
+    <!--<class name="app.xuriti.testCases.TC_003_AdminLoginTest"/>-->
             
     </classes>
   </test> <!-- Test -->

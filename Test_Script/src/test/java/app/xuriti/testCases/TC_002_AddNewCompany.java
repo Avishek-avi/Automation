@@ -39,14 +39,17 @@ public class TC_002_AddNewCompany extends BaseClass {
 		
 		//Entering Company's GST no in GST field
 		rp.setCompanyGstNo(gstno);
+		logger.info("Gst no entered");
 		Thread.sleep(2000);
 		
 		//Clicking get company details button
 		rp.getCompanyDetails();
+		logger.info("Get company details button clicked");
 		Thread.sleep(2000);
 		
 		//Submitting the company
 		rp.registerEntity();
+		logger.info("Register company button clicked");
 		Thread.sleep(2000);
 	
 	}

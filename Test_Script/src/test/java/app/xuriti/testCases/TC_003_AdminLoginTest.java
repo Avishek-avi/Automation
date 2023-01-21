@@ -23,6 +23,7 @@ public class TC_003_AdminLoginTest extends BaseClass {
 		logger.info("Entered admin's password");
 		
 		lp.clickLoginButton();
+		logger.info("Login button clicked");
 		Thread.sleep(3000);
 		
 		if(driver.getTitle().equals("Admin"))

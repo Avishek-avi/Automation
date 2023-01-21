@@ -74,6 +74,11 @@ public class ReadConfig {
 		return companyname;
 	}
 	
+	public String getSellerName() {
+		String sellername = pro.getProperty("sellername");
+		return sellername;
+	}
+	
 	public String getPincode() {
 		String pincode = pro.getProperty("pincode");
 		return pincode;

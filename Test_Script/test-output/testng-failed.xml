@@ -4,15 +4,13 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="app.xuriti.testCases.TC_004_CompanyApproval">
+      <class name="app.xuriti.testCases.TC_005_CreditPlanMapping">
         <methods>
-          <include name="manageComapniesSection"/>
+          <include name="creditPlanMapping"/>
           <include name="tearDown"/>
-          <include name="companyApproval"/>
-          <include name="adminLoginTest"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- app.xuriti.testCases.TC_004_CompanyApproval -->
+      </class> <!-- app.xuriti.testCases.TC_005_CreditPlanMapping -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
